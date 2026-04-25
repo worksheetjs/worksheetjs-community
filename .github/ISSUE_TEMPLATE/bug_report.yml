@@ -1,0 +1,179 @@
+name: "🐛 Bug Report"
+description: "Report a reproducible bug in a @worksheet-js/* package"
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report! 🙏
+
+        Before you continue:
+        - 🔎 Please [search existing issues](https://github.com/worksheetjs/worksheet-js-community/issues?q=is%3Aissue) first.
+        - 🧪 Please try to reproduce on the **latest** version of the package.
+        - 🏖 Ideally share a minimal repro in [StackBlitz](https://stackblitz.com) or CodeSandbox.
+
+        Bugs without a reproduction are much harder to diagnose and may be closed.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Preflight checklist
+      description: Please confirm the following before submitting.
+      options:
+        - label: I have searched existing issues and discussions and this is not a duplicate
+          required: true
+        - label: I am using the latest published version of the affected package
+          required: true
+        - label: This is a bug in a `@worksheet-js/*` package — not in my own app code
+          required: true
+        - label: I agree to follow the [Code of Conduct](https://github.com/worksheetjs/worksheet-js-community/blob/main/CODE_OF_CONDUCT.md)
+          required: true
+
+  - type: dropdown
+    id: package
+    attributes:
+      label: Affected package
+      description: Which package is the bug in?
+      options:
+        - "@worksheet-js/core"
+        - "@worksheet-js/angular"
+        - "@worksheet-js/react"
+        - "@worksheet-js/vue"
+        - "@worksheet-js/formula"
+        - "@worksheet-js/excel"
+        - "@worksheet-js/plugins"
+        - "Multiple / not sure"
+    validations:
+      required: true
+
+  - type: input
+    id: package-version
+    attributes:
+      label: Package version
+      description: "Run `npm view @worksheet-js/<name> version` or check your `package.json`."
+      placeholder: "e.g. 2.4.1"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of what the bug is. Screenshots / screen recordings welcome.
+      placeholder: "When I call `sheet.insertRow()` after loading an XLSX file, the formulas in the row below are not recalculated..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      placeholder: "Formulas in rows below the inserted row should update their references automatically."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: |
+        **This is the single most important field.** Please provide one of:
+          - A StackBlitz / CodeSandbox link
+          - A minimal GitHub repo
+          - A complete, self-contained code snippet
+
+        Issues without a reproduction may be closed.
+      placeholder: "https://stackblitz.com/edit/..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: If not obvious from the repro above.
+      value: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: false
+
+  - type: dropdown
+    id: framework
+    attributes:
+      label: Framework
+      options:
+        - "React"
+        - "Vue"
+        - "Angular"
+        - "Svelte"
+        - "Vanilla JS / TS"
+        - "Other (specify below)"
+    validations:
+      required: true
+
+  - type: input
+    id: framework-version
+    attributes:
+      label: Framework version
+      placeholder: "e.g. React 19.0.0"
+
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Browser(s) affected
+      multiple: true
+      options:
+        - "Chrome"
+        - "Firefox"
+        - "Safari"
+        - "Edge"
+        - "Opera"
+        - "Mobile Safari (iOS)"
+        - "Chrome Android"
+        - "Not browser-specific"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "e.g. macOS 15.2, Windows 11, Ubuntu 24.04"
+    validations:
+      required: true
+
+  - type: input
+    id: node
+    attributes:
+      label: Node.js version (if using SSR or a build step)
+      placeholder: "e.g. 22.11.0"
+
+  - type: dropdown
+    id: plan
+    attributes:
+      label: Plan
+      description: Helps us route. Paid customers — please also email priority support for SLA.
+      options:
+        - "Free / Community"
+        - "Pro"
+        - "Business"
+        - "Enterprise"
+        - "Prefer not to say"
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant console / error output
+      description: Paste any error messages or stack traces. Will be rendered as a code block.
+      render: shell
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Anything else that might help — recent upgrades, unusual environments, feature flags, etc.

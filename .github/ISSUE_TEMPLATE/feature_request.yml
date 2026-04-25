@@ -1,0 +1,99 @@
+name: "💡 Feature Request"
+description: "Suggest a new feature or improvement for a @worksheet-js/* package"
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest a feature! 🚀
+
+        Before you continue:
+        - 🔎 Please [search existing issues](https://github.com/worksheetjs/worksheet-js-community/issues?q=is%3Aissue) and [discussions](https://github.com/worksheetjs/worksheet-js-community/discussions).
+        - 💬 For broader ideas or design discussions, consider opening a [Discussion → Ideas](https://github.com/worksheetjs/worksheet-js-community/discussions/categories/ideas) instead — it gets more community eyes.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Preflight checklist
+      options:
+        - label: I have searched existing issues and discussions and this is not a duplicate
+          required: true
+        - label: I have checked the [docs](https://worksheetjs.com/docs) and [changelog](https://worksheetjs.com/changelog) — this feature does not already exist
+          required: true
+        - label: I agree to follow the [Code of Conduct](https://github.com/worksheetjs/worksheet-js-community/blob/main/CODE_OF_CONDUCT.md)
+          required: true
+
+  - type: dropdown
+    id: package
+    attributes:
+      label: Target package
+      description: Which package would this feature live in?
+      options:
+        - "@worksheet-js/core"
+        - "@worksheet-js/angular"
+        - "@worksheet-js/react"
+        - "@worksheet-js/vue"
+        - "@worksheet-js/formula"
+        - "@worksheet-js/excel"
+        - "@worksheet-js/plugins"
+        - "New package"
+        - "Not sure"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the user pain-point, not the solution. What can't you do today?
+      placeholder: "I'm building an analytics dashboard and need to export only the visible filtered rows, but the current export API always exports all rows..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution you'd like
+      description: A clear description of what you want to happen. An API sketch is gold.
+      placeholder: |
+        Add an option to `sheet.exportXLSX()`:
+
+        ```ts
+        sheet.exportXLSX({ scope: "visible" }); // or "all" (default) | "selected"
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you've considered
+      description: Any workarounds you've tried, or other libraries that do this differently.
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How critical is this to you?
+      options:
+        - "Nice to have"
+        - "Would significantly improve my workflow"
+        - "Blocking my adoption of WorksheetJS"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: breaking
+    attributes:
+      label: Breaking change?
+      description: Do you think this would require a breaking change?
+      options:
+        - label: "Yes, I think this would be a breaking change"
+        - label: "No, I believe this can be additive / opt-in"
+        - label: "I'm not sure"
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Use cases, mockups, screenshots, links to similar features in other tools.

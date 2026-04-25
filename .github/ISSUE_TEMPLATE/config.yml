@@ -1,0 +1,23 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Ask a question (Q&A)
+    url: https://github.com/worksheetjs/worksheet-js-community/discussions/categories/q-a
+    about: "Usage questions, best practices, 'how do I...?' — please use Discussions, not Issues."
+  - name: 💡 Share an idea / RFC
+    url: https://github.com/worksheetjs/worksheet-js-community/discussions/categories/ideas
+    about: "Early-stage ideas or architectural proposals — start a Discussion to gather feedback before opening a formal feature request."
+  - name: 🙌 Show & Tell
+    url: https://github.com/worksheetjs/worksheet-js-community/discussions/categories/show-and-tell
+    about: "Built something cool with WorksheetJS? Share it with the community!"
+  - name: 📚 Documentation
+    url: https://worksheetjs.com/docs
+    about: "Check the official docs first — most usage questions are answered there."
+  - name: 🧪 Sandbox
+    url: https://worksheetjs.com/sandbox
+    about: "Try live and copy a minimal reproduction before opening a bug."
+  - name: 🔒 Report a security vulnerability
+    url: https://github.com/worksheetjs/worksheet-js-community/security/advisories/new
+    about: "Please do NOT open a public issue for security problems. Use a private advisory instead."
+  - name: 💼 Paid / priority support
+    url: https://worksheetjs.com/contact
+    about: "Enterprise / paid-plan customers — reach your support contact for SLA-backed help."
