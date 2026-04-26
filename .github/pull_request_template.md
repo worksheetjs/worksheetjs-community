@@ -36,10 +36,57 @@
 ────────────────────────────────────────────────────────────────────────────────
 -->
 
-## Why is this PR being closed?
+<div align="center">
 
-This repository **does not accept external pull requests**. The source code for `@worksheet-js/*` packages is proprietary and lives in a private repo — so there is no source here to patch.
+<img src="https://worksheetjs.com/images/worksheetjs-logo.png" alt="WorksheetJS" height="64" />
 
-👉 Please open an **[Issue](../../issues/new/choose)** or a **[Discussion](../../discussions)** instead.
+<h1>⛔ This PR will be closed</h1>
 
-Thank you for your interest — we really do appreciate it. 🙏
+<p><b>This repository does not accept external pull requests.</b></p>
+
+<p>
+  <a href="../../issues/new/choose"><img alt="Open an issue" src="https://img.shields.io/badge/%F0%9F%90%9B%20open-an%20issue-7C3AED?style=for-the-badge&labelColor=0b1020"></a>
+  <a href="../../discussions"><img alt="Start a discussion" src="https://img.shields.io/badge/%F0%9F%92%AC%20start-a%20discussion-A855F7?style=for-the-badge&labelColor=0b1020"></a>
+  <a href="https://worksheetjs.com/contact"><img alt="Contact us" src="https://img.shields.io/badge/%F0%9F%92%BC%20contact-us-22c55e?style=for-the-badge&labelColor=0b1020"></a>
+</p>
+
+</div>
+
+---
+
+## 🤔 Why is this PR being closed?
+
+The source code for `@worksheet-js/*` packages is **proprietary** and lives in a **private repo**. This community hub doesn't contain package source — so there's nothing here for a PR to patch.
+
+> [!IMPORTANT]
+> We **don't accept external pull requests** to this repository. Maintainers will close this PR — no review needed on your end.
+
+---
+
+## 👉 Try one of these instead
+
+<table>
+<tr>
+  <td align="center" width="33%">
+    <a href="../../issues/new?template=bug_report.yml"><h3>🐛</h3><b>Report a bug</b></a><br/>
+    <sub>Found something broken? Open an issue — we triage within 2 business days.</sub>
+  </td>
+  <td align="center" width="33%">
+    <a href="../../issues/new?template=feature_request.yml"><h3>💡</h3><b>Request a feature</b></a><br/>
+    <sub>Have an idea? File a feature request — it's reviewed each roadmap cycle.</sub>
+  </td>
+  <td align="center" width="33%">
+    <a href="../../discussions/categories/ideas"><h3>💬</h3><b>Discuss an approach</b></a><br/>
+    <sub>Want to talk through an idea first? Start a Discussion → Ideas.</sub>
+  </td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+<sub>🙏 <b>Your feedback shapes the roadmap — even if we can't accept code directly.</b> Thank you.</sub><br/>
+<sub><a href="https://worksheetjs.com">worksheetjs.com</a> · <a href="../README.md">community home</a> · <a href="../SUPPORT.md">support</a></sub>
+
+</div>
