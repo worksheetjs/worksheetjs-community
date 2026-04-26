@@ -6,14 +6,22 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to file a bug report! 🙏
+        <p align="center">
+          <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b1020,40:ef4444,100:7C3AED&height=160&section=header&text=Bug%20Report&fontSize=34&fontColor=ffffff&fontAlignY=38&desc=A%20clean%20repro%20unblocks%20everything&descAlignY=62&descSize=11&animation=fadeIn" alt="Bug Report" width="100%" />
+        </p>
 
-        Before you continue:
-        - 🔎 Please [search existing issues](https://github.com/worksheetjs/worksheet-js-community/issues?q=is%3Aissue) first.
-        - 🧪 Please try to reproduce on the **latest** version of the package.
-        - 🏖 Ideally share a minimal repro in [StackBlitz](https://stackblitz.com) or CodeSandbox.
+        <h3 align="center">
+          <img src="https://api.iconify.design/lucide:bug.svg?color=%23ef4444&width=20" align="center" />
+          &nbsp;Thanks for taking the time to file a bug report
+        </h3>
 
-        Bugs without a reproduction are much harder to diagnose and may be closed.
+        **Before you continue:**
+
+        - <img src="https://api.iconify.design/lucide:search.svg?color=%237C3AED&width=14" align="center" /> &nbsp;[Search existing issues](https://github.com/worksheetjs/worksheetjs-community/issues?q=is%3Aissue) — duplicates slow everyone down.
+        - <img src="https://api.iconify.design/lucide:flask-conical.svg?color=%23A855F7&width=14" align="center" /> &nbsp;Reproduce on the **latest** version of the affected package.
+        - <img src="https://api.iconify.design/lucide:codesandbox.svg?color=%2322c55e&width=14" align="center" /> &nbsp;Share a minimal repro in [StackBlitz](https://stackblitz.com) or [CodeSandbox](https://codesandbox.io).
+
+        > <img src="https://api.iconify.design/lucide:alert-triangle.svg?color=%23f59e0b&width=14" align="center" /> &nbsp;**Bugs without a reproduction are much harder to diagnose and may be closed.** If you can't share one, please ask in [Discussions → Q&A](https://github.com/worksheetjs/worksheetjs-community/discussions/categories/q-a) instead.
 
   - type: checkboxes
     id: preflight
@@ -27,8 +35,16 @@ body:
           required: true
         - label: This is a bug in a `@worksheet-js/*` package — not in my own app code
           required: true
-        - label: I agree to follow the [Code of Conduct](https://github.com/worksheetjs/worksheet-js-community/blob/main/CODE_OF_CONDUCT.md)
+        - label: I agree to follow the [Code of Conduct](https://github.com/worksheetjs/worksheetjs-community/blob/main/CODE_OF_CONDUCT.md)
           required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        <h3>
+          <img src="https://api.iconify.design/lucide:package.svg?color=%237C3AED&width=18" align="center" />
+          &nbsp;1 · Which package?
+        </h3>
 
   - type: dropdown
     id: package
@@ -56,12 +72,20 @@ body:
     validations:
       required: true
 
+  - type: markdown
+    attributes:
+      value: |
+        <h3>
+          <img src="https://api.iconify.design/lucide:file-text.svg?color=%23A855F7&width=18" align="center" />
+          &nbsp;2 · What's wrong?
+        </h3>
+
   - type: textarea
     id: what-happened
     attributes:
       label: What happened?
-      description: A clear description of what the bug is. Screenshots / screen recordings welcome.
-      placeholder: "When I call `sheet.insertRow()` after loading an XLSX file, the formulas in the row below are not recalculated..."
+      description: A clear description of the bug. Screenshots and screen recordings welcome.
+      placeholder: "When I call `sheet.insertRow()` after loading an XLSX file, the formulas in the row below are not recalculated…"
     validations:
       required: true
 
@@ -73,32 +97,36 @@ body:
     validations:
       required: true
 
+  - type: markdown
+    attributes:
+      value: |
+        <h3>
+          <img src="https://api.iconify.design/lucide:flask-conical.svg?color=%2322c55e&width=18" align="center" />
+          &nbsp;3 · Reproduction <sub><i>— the most important field</i></sub>
+        </h3>
+
   - type: textarea
     id: reproduction
     attributes:
       label: Minimal reproduction
       description: |
-        **This is the single most important field.** Please provide one of:
-          - A StackBlitz / CodeSandbox link
+        Please provide **one** of:
+          - A StackBlitz or CodeSandbox link
           - A minimal GitHub repo
           - A complete, self-contained code snippet
 
         Issues without a reproduction may be closed.
-      placeholder: "https://stackblitz.com/edit/..."
+      placeholder: "https://stackblitz.com/edit/…"
     validations:
       required: true
 
-  - type: textarea
-    id: steps
+  - type: markdown
     attributes:
-      label: Steps to reproduce
-      description: If not obvious from the repro above.
       value: |
-        1. Go to '...'
-        2. Click on '...'
-        3. See error
-    validations:
-      required: false
+        <h3>
+          <img src="https://api.iconify.design/lucide:laptop.svg?color=%23f59e0b&width=18" align="center" />
+          &nbsp;4 · Environment
+        </h3>
 
   - type: dropdown
     id: framework
@@ -110,15 +138,9 @@ body:
         - "Angular"
         - "Svelte"
         - "Vanilla JS / TS"
-        - "Other (specify below)"
+        - "Other"
     validations:
       required: true
-
-  - type: input
-    id: framework-version
-    attributes:
-      label: Framework version
-      placeholder: "e.g. React 19.0.0"
 
   - type: dropdown
     id: browsers
@@ -130,7 +152,6 @@ body:
         - "Firefox"
         - "Safari"
         - "Edge"
-        - "Opera"
         - "Mobile Safari (iOS)"
         - "Chrome Android"
         - "Not browser-specific"
@@ -148,22 +169,17 @@ body:
   - type: input
     id: node
     attributes:
-      label: Node.js version (if using SSR or a build step)
+      label: Node.js version
+      description: Only if you're using SSR or a build step.
       placeholder: "e.g. 22.11.0"
 
-  - type: dropdown
-    id: plan
+  - type: markdown
     attributes:
-      label: Plan
-      description: Helps us route. Paid customers — please also email priority support for SLA.
-      options:
-        - "Free / Community"
-        - "Pro"
-        - "Business"
-        - "Enterprise"
-        - "Prefer not to say"
-    validations:
-      required: false
+      value: |
+        <h3>
+          <img src="https://api.iconify.design/lucide:terminal.svg?color=%237C3AED&width=18" align="center" />
+          &nbsp;5 · Logs &amp; extra context
+        </h3>
 
   - type: textarea
     id: logs
@@ -177,3 +193,15 @@ body:
     attributes:
       label: Additional context
       description: Anything else that might help — recent upgrades, unusual environments, feature flags, etc.
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        <p align="center">
+          <sub>
+            <img src="https://api.iconify.design/lucide:heart-handshake.svg?color=%23A855F7&width=14" align="center" />
+            &nbsp;<b>Thanks!</b> We triage new bugs within 2 business days.
+          </sub>
+        </p>

@@ -1,118 +1,194 @@
-<div align="center">
+<!-- ============================================================== -->
+<!--   WorksheetJS · Support  —  HTML-rendered                     -->
+<!-- ============================================================== -->
 
-<img src="https://worksheetjs.com/images/worksheetjs-logo.png" alt="WorksheetJS" height="72" />
+<a name="top"></a>
 
-<h1>🛟 Getting Support</h1>
-
-<p><b>Pick the right channel — and get a faster, better answer.</b></p>
-
-<p>
-  <a href="../../discussions"><img alt="Discussions" src="https://img.shields.io/badge/%F0%9F%92%AC%20community-discussions-7C3AED?style=for-the-badge&labelColor=0b1020"></a>
-  <a href="../../issues/new/choose"><img alt="Issues" src="https://img.shields.io/badge/%F0%9F%90%9B%20file-an%20issue-A855F7?style=for-the-badge&labelColor=0b1020"></a>
-  <a href="https://worksheetjs.com/contact"><img alt="Paid support" src="https://img.shields.io/badge/%F0%9F%92%BC%20paid-support-22c55e?style=for-the-badge&labelColor=0b1020"></a>
-  <a href="https://worksheetjs.com/docs"><img alt="Docs" src="https://img.shields.io/badge/%F0%9F%93%9A%20docs-read-f59e0b?style=for-the-badge&labelColor=0b1020"></a>
+<p align="center">
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=0:0b1020,40:7C3AED,100:A855F7&height=200&section=header&text=Getting%20Support&fontSize=38&fontColor=ffffff&fontAlignY=38&desc=Pick%20the%20right%20channel%20%E2%80%94%20get%20the%20fastest%20answer&descAlignY=62&descSize=12&animation=fadeIn"
+    alt="WorksheetJS · Support"
+    width="100%"
+  />
 </p>
 
-<sub>✦ Free community help · paid SLAs · always self-serve docs ✦</sub>
+<p align="center">
+  <img src="https://worksheetjs.com/images/worksheetjs-logo.png" alt="WorksheetJS" height="68" />
+</p>
 
-</div>
+<h1 align="center">
+  <img src="https://api.iconify.design/lucide:life-buoy.svg?color=%237C3AED&width=28" align="center" />
+  &nbsp;Getting Support
+</h1>
 
----
+<p align="center"><b>Pick the right channel — and get a faster, better answer.</b></p>
 
-## 🧭 Pick the right channel
+<p align="center">
+  <a href="../../discussions"><img alt="Discussions" src="https://img.shields.io/badge/Community-Discussions-7C3AED?style=for-the-badge&logo=githubdiscussions&logoColor=white&labelColor=0b1020"></a>
+  <a href="../../issues/new/choose"><img alt="Issues" src="https://img.shields.io/badge/File-an%20issue-A855F7?style=for-the-badge&logo=github&logoColor=white&labelColor=0b1020"></a>
+  <a href="https://worksheetjs.com/contact"><img alt="Paid support" src="https://img.shields.io/badge/Paid-Support-22c55e?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0b1020"></a>
+  <a href="https://worksheetjs.com/docs"><img alt="Docs" src="https://img.shields.io/badge/Docs-Read-f59e0b?style=for-the-badge&logo=readthedocs&logoColor=white&labelColor=0b1020"></a>
+</p>
 
-| I need to... | Channel | ⏱ Response time |
-|---|---|---|
-| ❓ Ask *"how do I...?"* | [GitHub Discussions → Q&A](../../discussions/categories/q-a) | Community-driven |
-| 🐛 Report a reproducible bug | [New Bug Issue](../../issues/new?template=bug_report.yml) | Triaged within **2 business days** |
-| 💡 Request a feature | [New Feature Request](../../issues/new?template=feature_request.yml) | Reviewed at next roadmap cycle |
-| 🚀 Share something you built | [Discussions → Show & Tell](../../discussions/categories/show-and-tell) | — |
-| 📜 Propose a change via RFC | [Discussions → Ideas](../../discussions/categories/ideas) | Reviewed by maintainers |
-| 🔒 Privately report a vulnerability | [`SECURITY.md`](./SECURITY.md) | ≤ **2 business days** |
-| 💳 Billing, licensing, invoicing | [worksheetjs.com/contact](https://worksheetjs.com/contact) | **1 business day** |
-| 💼 Paid / priority technical support | [worksheetjs.com/contact](https://worksheetjs.com/contact) | Per your plan's SLA |
+<p align="center">
+  <sub>
+    <img src="https://api.iconify.design/lucide:sparkles.svg?color=%237C3AED&width=14" align="center" />
+    &nbsp;Free community help · paid SLAs · always self-serve docs&nbsp;
+    <img src="https://api.iconify.design/lucide:sparkles.svg?color=%237C3AED&width=14" align="center" />
+  </sub>
+</p>
 
----
+<br/>
 
-## 💬 Free community support
+<!-- ────────────  CHANNEL TABLE  ──────────── -->
 
-<table>
-<tr>
-  <td align="center" width="25%">
-    <h3>🔍</h3>
-    <b>Search first</b><br/>
-    <sub>80% of questions have been asked before — try existing <a href="../../issues?q=is%3Aissue">Issues</a> & <a href="../../discussions">Discussions</a>.</sub>
-  </td>
-  <td align="center" width="25%">
-    <h3>📚</h3>
-    <b>Read the docs</b><br/>
-    <sub><a href="https://worksheetjs.com/docs">worksheetjs.com/docs</a> — guides, API reference, recipes.</sub>
-  </td>
-  <td align="center" width="25%">
-    <h3>🧪</h3>
-    <b>Try the sandbox</b><br/>
-    <sub><a href="https://worksheetjs.com/sandbox">worksheetjs.com/sandbox</a> — isolate the problem live.</sub>
-  </td>
-  <td align="center" width="25%">
-    <h3>💬</h3>
-    <b>Ask Discussions</b><br/>
-    <sub>Maintainers and community members answer as time permits.</sub>
-  </td>
-</tr>
+<h2>
+  <img src="https://api.iconify.design/lucide:compass.svg?color=%237C3AED&width=22" align="center" />
+  &nbsp;Pick the right channel
+</h2>
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">I need to…</th>
+      <th align="left">Channel</th>
+      <th align="left">
+        <img src="https://api.iconify.design/lucide:timer.svg?color=%237C3AED&width=14" align="center" />
+        &nbsp;Response time
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://api.iconify.design/lucide:help-circle.svg?color=%23A855F7&width=14" align="center" />&nbsp; Ask <i>"how do I…?"</i></td>
+      <td><a href="../../discussions/categories/q-a">GitHub Discussions → Q&amp;A</a></td>
+      <td>Community-driven</td>
+    </tr>
+    <tr>
+      <td><img src="https://api.iconify.design/lucide:bug.svg?color=%237C3AED&width=14" align="center" />&nbsp; Report a reproducible bug</td>
+      <td><a href="../../issues/new?template=bug_report.yml">New Bug Issue</a></td>
+      <td>Triaged within <b>2 business days</b></td>
+    </tr>
+    <tr>
+      <td><img src="https://api.iconify.design/lucide:lightbulb.svg?color=%23f59e0b&width=14" align="center" />&nbsp; Request a feature</td>
+      <td><a href="../../issues/new?template=feature_request.yml">New Feature Request</a></td>
+      <td>Reviewed at next roadmap cycle</td>
+    </tr>
+    <tr>
+      <td><img src="https://api.iconify.design/lucide:rocket.svg?color=%2322c55e&width=14" align="center" />&nbsp; Share something you built</td>
+      <td><a href="../../discussions/categories/show-and-tell">Discussions → Show &amp; Tell</a></td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><img src="https://api.iconify.design/lucide:file-text.svg?color=%237C3AED&width=14" align="center" />&nbsp; Propose a change via RFC</td>
+      <td><a href="../../discussions/categories/ideas">Discussions → Ideas</a></td>
+      <td>Reviewed by maintainers</td>
+    </tr>
+    <tr>
+      <td><img src="https://api.iconify.design/lucide:shield-alert.svg?color=%23ef4444&width=14" align="center" />&nbsp; Privately report a vulnerability</td>
+      <td><a href="./SECURITY.md"><code>SECURITY.md</code></a></td>
+      <td>≤ <b>2 business days</b></td>
+    </tr>
+    <tr>
+      <td><img src="https://api.iconify.design/lucide:credit-card.svg?color=%23A855F7&width=14" align="center" />&nbsp; Billing, licensing, invoicing</td>
+      <td><a href="https://worksheetjs.com/contact">worksheetjs.com/contact</a></td>
+      <td><b>1 business day</b></td>
+    </tr>
+    <tr>
+      <td><img src="https://api.iconify.design/lucide:briefcase.svg?color=%23f59e0b&width=14" align="center" />&nbsp; Paid / priority technical support</td>
+      <td><a href="https://worksheetjs.com/contact">worksheetjs.com/contact</a></td>
+      <td>Per your plan's SLA</td>
+    </tr>
+  </tbody>
 </table>
 
-> [!NOTE]
-> Community responses are **best-effort**. There is no SLA on free-tier support.
+<blockquote>
+  <p>
+    <img src="https://api.iconify.design/lucide:info.svg?color=%237C3AED&width=16" align="center" />
+    &nbsp;<b>Note.</b> Community responses are <b>best-effort</b>. There is no SLA on free-tier support.
+  </p>
+</blockquote>
 
----
+<br/>
 
-## 💼 Paid / priority support
+<!-- ────────────  PAID  ──────────── -->
 
-<div align="center">
+<h2>
+  <img src="https://api.iconify.design/lucide:briefcase.svg?color=%237C3AED&width=22" align="center" />
+  &nbsp;Paid / priority support
+</h2>
 
-<a href="https://worksheetjs.com/pricing"><img alt="Pricing" src="https://img.shields.io/badge/%F0%9F%92%8E%20view-pricing%20plans-7C3AED?style=for-the-badge&labelColor=0b1020"></a>
+<p>
+  Need guaranteed SLAs, a private Slack / Teams channel, or architecture reviews?
+  Paid plans cover all of it — see <a href="https://worksheetjs.com/pricing">worksheetjs.com/pricing</a>, then reach out via <a href="https://worksheetjs.com/contact">worksheetjs.com/contact</a> with your org details.
+</p>
 
-</div>
+<p align="center">
+  <a href="https://worksheetjs.com/pricing"><img alt="Pricing" src="https://img.shields.io/badge/View-Pricing%20plans-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0b1020"></a>
+  <a href="https://worksheetjs.com/contact"><img alt="Contact" src="https://img.shields.io/badge/Contact-Sales-A855F7?style=for-the-badge&logo=maildotru&logoColor=white&labelColor=0b1020"></a>
+</p>
 
-Paid plans ([worksheetjs.com/pricing](https://worksheetjs.com/pricing)) include:
+<br/>
 
-- ⏱ **Guaranteed response SLAs** (plan-dependent)
-- 📨 **Direct email / ticket** support
-- 💼 Access to an **enterprise Slack / Teams channel** *(Enterprise plan)*
-- 🏛 **Architecture review sessions** *(Enterprise plan)*
-- 🚦 **Prioritized bug fixes**
+<!-- ────────────  CHECKLIST  ──────────── -->
 
-> 👉 To enable paid support, contact [worksheetjs.com/contact](https://worksheetjs.com/contact) with your organization details.
+<h2>
+  <img src="https://api.iconify.design/lucide:clipboard-check.svg?color=%237C3AED&width=22" align="center" />
+  &nbsp;Before you open an issue or discussion
+</h2>
 
----
+<p>A little homework makes a huge difference — both for you (faster answer) and for maintainers.</p>
 
-## 🐛 Before you open an issue or discussion
+<blockquote>
+  <p>
+    <img src="https://api.iconify.design/lucide:lightbulb.svg?color=%23f59e0b&width=16" align="center" />
+    &nbsp;<b>Tip.</b> Tick these before posting:
+  </p>
+  <ul>
+    <li>I searched existing <a href="../../issues?q=is%3Aissue">issues</a> and <a href="../../discussions">discussions</a></li>
+    <li>I'm on the <b>latest</b> version of the affected package (<code>npm view @worksheet-js/&lt;name&gt; version</code>)</li>
+    <li>I have a <b>minimal reproduction</b> — ideally a <a href="https://stackblitz.com">StackBlitz</a> or CodeSandbox link</li>
+    <li>I can describe <b>what I expected</b> vs <b>what actually happened</b></li>
+    <li>For bugs, I've included my <b>browser, framework, and package versions</b></li>
+  </ul>
+</blockquote>
 
-A little homework makes a huge difference — both for you (faster answer) and for maintainers.
+<br/>
 
-> [!TIP]
-> ✅ Tick these before posting:
->
-> - [ ] I searched existing [issues](../../issues?q=is%3Aissue) and [discussions](../../discussions)
-> - [ ] I'm on the **latest** version of the affected package (`npm view @worksheet-js/<name> version`)
-> - [ ] I have a **minimal reproduction** — ideally a [StackBlitz](https://stackblitz.com) or CodeSandbox link
-> - [ ] I can describe **what I expected** vs **what actually happened**
-> - [ ] For bugs, I've included my **browser, framework, and package versions**
+<!-- ────────────  IN RETURN  ──────────── -->
 
----
+<h2>
+  <img src="https://api.iconify.design/lucide:handshake.svg?color=%237C3AED&width=22" align="center" />
+  &nbsp;Two small house rules
+</h2>
 
-## 🤝 What we ask in return
+<ul>
+  <li><img src="https://api.iconify.design/lucide:at-sign.svg?color=%23ef4444&width=14" align="center" />&nbsp; <b>Don't @-mention maintainers by name</b> — use the channels above and the right person will pick it up.</li>
+  <li><img src="https://api.iconify.design/lucide:copy.svg?color=%23ef4444&width=14" align="center" />&nbsp; <b>Don't cross-post</b> the same question to Issues + Discussions + email — pick one.</li>
+</ul>
 
-- 💛 **Be patient and kind** — maintainers triage alongside day jobs
-- 📜 Respect the [Code of Conduct](./CODE_OF_CONDUCT.md)
-- 🚫 **Don't @-mention maintainers by name** — use the channels above and the right person will pick it up
-- 🚫 **Don't cross-post** the same question to Issues + Discussions + email — pick one
+<p><sub>General behavior expectations live in the <a href="./CODE_OF_CONDUCT.md">Code of Conduct</a>.</sub></p>
 
----
+<br/>
 
-<div align="center">
+<!-- ────────────  FOOTER  ──────────── -->
 
-<sub><b>🙌 Thank you for being part of the WorksheetJS community.</b></sub><br/>
-<sub><a href="https://worksheetjs.com">worksheetjs.com</a> · <a href="./SECURITY.md">security</a> · <a href="./CODE_OF_CONDUCT.md">code of conduct</a></sub>
+<p align="center">
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=0:A855F7,100:0b1020&height=120&section=footer&text=We%E2%80%99re%20here%20to%20help.&fontSize=13&fontColor=ffffff&fontAlignY=70&animation=fadeIn"
+    alt="Footer"
+    width="100%"
+  />
+</p>
 
-</div>
+<p align="center">
+  <sub><b>
+    <img src="https://api.iconify.design/lucide:heart-handshake.svg?color=%23A855F7&width=14" align="center" />
+    &nbsp;Thank you for being part of the WorksheetJS community.
+  </b></sub><br/>
+  <sub>
+    <a href="https://worksheetjs.com">worksheetjs.com</a> ·
+    <a href="./SECURITY.md">security</a> ·
+    <a href="./CODE_OF_CONDUCT.md">code of conduct</a>
+  </sub>
+</p>

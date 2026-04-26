@@ -6,11 +6,20 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to suggest a feature! 🚀
+        <p align="center">
+          <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b1020,40:f59e0b,100:7C3AED&height=160&section=header&text=Feature%20Request&fontSize=34&fontColor=ffffff&fontAlignY=38&desc=Tell%20us%20the%20problem%20%E2%80%94%20we%27ll%20design%20the%20fix%20together&descAlignY=62&descSize=11&animation=fadeIn" alt="Feature Request" width="100%" />
+        </p>
 
-        Before you continue:
-        - 🔎 Please [search existing issues](https://github.com/worksheetjs/worksheet-js-community/issues?q=is%3Aissue) and [discussions](https://github.com/worksheetjs/worksheet-js-community/discussions).
-        - 💬 For broader ideas or design discussions, consider opening a [Discussion → Ideas](https://github.com/worksheetjs/worksheet-js-community/discussions/categories/ideas) instead — it gets more community eyes.
+        <h3 align="center">
+          <img src="https://api.iconify.design/lucide:lightbulb.svg?color=%23f59e0b&width=20" align="center" />
+          &nbsp;Thanks for taking the time to suggest a feature
+        </h3>
+
+        **Before you continue:**
+
+        - <img src="https://api.iconify.design/lucide:search.svg?color=%237C3AED&width=14" align="center" /> &nbsp;[Search existing issues](https://github.com/worksheetjs/worksheetjs-community/issues?q=is%3Aissue) and [discussions](https://github.com/worksheetjs/worksheetjs-community/discussions).
+        - <img src="https://api.iconify.design/lucide:messages-square.svg?color=%23A855F7&width=14" align="center" /> &nbsp;For broad ideas or design discussions, start a [Discussion → Ideas](https://github.com/worksheetjs/worksheetjs-community/discussions/categories/ideas) — it gets more community eyes.
+        - <img src="https://api.iconify.design/lucide:book-open.svg?color=%2322c55e&width=14" align="center" /> &nbsp;Check the [docs](https://worksheetjs.com/docs) and [changelog](https://worksheetjs.com/changelog) — the feature may already exist.
 
   - type: checkboxes
     id: preflight
@@ -19,10 +28,18 @@ body:
       options:
         - label: I have searched existing issues and discussions and this is not a duplicate
           required: true
-        - label: I have checked the [docs](https://worksheetjs.com/docs) and [changelog](https://worksheetjs.com/changelog) — this feature does not already exist
+        - label: I have checked the docs and changelog — this feature does not already exist
           required: true
-        - label: I agree to follow the [Code of Conduct](https://github.com/worksheetjs/worksheet-js-community/blob/main/CODE_OF_CONDUCT.md)
+        - label: I agree to follow the [Code of Conduct](https://github.com/worksheetjs/worksheetjs-community/blob/main/CODE_OF_CONDUCT.md)
           required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        <h3>
+          <img src="https://api.iconify.design/lucide:package.svg?color=%237C3AED&width=18" align="center" />
+          &nbsp;1 · Where would it live?
+        </h3>
 
   - type: dropdown
     id: package
@@ -42,20 +59,36 @@ body:
     validations:
       required: true
 
+  - type: markdown
+    attributes:
+      value: |
+        <h3>
+          <img src="https://api.iconify.design/lucide:help-circle.svg?color=%23A855F7&width=18" align="center" />
+          &nbsp;2 · The problem
+        </h3>
+
   - type: textarea
     id: problem
     attributes:
       label: What problem are you trying to solve?
-      description: Describe the user pain-point, not the solution. What can't you do today?
-      placeholder: "I'm building an analytics dashboard and need to export only the visible filtered rows, but the current export API always exports all rows..."
+      description: Describe the user pain-point, **not** the solution. What can't you do today?
+      placeholder: "I'm building an analytics dashboard and need to export only the visible filtered rows, but the current export API always exports all rows…"
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        <h3>
+          <img src="https://api.iconify.design/lucide:sparkles.svg?color=%2322c55e&width=18" align="center" />
+          &nbsp;3 · The solution
+        </h3>
 
   - type: textarea
     id: solution
     attributes:
       label: Describe the solution you'd like
-      description: A clear description of what you want to happen. An API sketch is gold.
+      description: A clear description of what you want to happen. **An API sketch is gold.**
       placeholder: |
         Add an option to `sheet.exportXLSX()`:
 
@@ -71,6 +104,14 @@ body:
       label: Alternatives you've considered
       description: Any workarounds you've tried, or other libraries that do this differently.
 
+  - type: markdown
+    attributes:
+      value: |
+        <h3>
+          <img src="https://api.iconify.design/lucide:gauge.svg?color=%23f59e0b&width=18" align="center" />
+          &nbsp;4 · Impact
+        </h3>
+
   - type: dropdown
     id: priority
     attributes:
@@ -82,18 +123,20 @@ body:
     validations:
       required: true
 
-  - type: checkboxes
-    id: breaking
-    attributes:
-      label: Breaking change?
-      description: Do you think this would require a breaking change?
-      options:
-        - label: "Yes, I think this would be a breaking change"
-        - label: "No, I believe this can be additive / opt-in"
-        - label: "I'm not sure"
-
   - type: textarea
     id: extra
     attributes:
       label: Additional context
       description: Use cases, mockups, screenshots, links to similar features in other tools.
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        <p align="center">
+          <sub>
+            <img src="https://api.iconify.design/lucide:heart-handshake.svg?color=%23A855F7&width=14" align="center" />
+            &nbsp;<b>Your feedback shapes the roadmap.</b> Reviewed each roadmap cycle.
+          </sub>
+        </p>
